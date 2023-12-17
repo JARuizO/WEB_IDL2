@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Portafolio Julio Ruiz</title>
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <div class="row navigation">
+        <div class="col">
+          <img src="img/logo.jpg" alt="" width="100" height="30"/>
+        </div>
+    
+        <div class="col">
+          <div class="navigationItems">
+            <ul class="nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Valores</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Acerca de mí</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Proyectos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    
+      <div class="row foto d-flex">
+        <div class="col">
+          <img src="img/fotojulio.jpg" alt="" width="420" height="380" align="right"/>
+        </div>
+        <div class="col">
+          <br>
+          <br>
+          <br>
+          <br>
+          <p>Hola soy</p>
+          <h1>Julio Alexander Ruiz Ordinola</h1>
+          <p>julioruizordinola@gmail.com</p>
+          <button type="button" class="btn btn-primary">Perfil</button>
+        </div>
+      </div>
+
+      <div class="row titulo">
+        <div class="col">
+          <br>
+          <h3>Proyectos</h3>
+        </div>
+      </div>
+
+      <div class="card-group">
+        <div class="card">
+          <img src="img/syslogis.jpg" class="card-img-top" alt="" width="280" height="360">
+          <div class="card-body">
+            <h5 class="card-title">SISTEMA DE LOGISTICA</h5>
+            <p class="card-text">Sistema administrativo web para el área de Lógistica que permite el registro
+              y control de órdenes de compra y/o servicios.</p>
+            <p class="card-text"><small class="text-body-secondary">En desarrollo...</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/logocomputer.jpg" class="card-img-top" alt="" width="280" height="360">
+          <div class="card-body">
+            <h5 class="card-title">SOLUCIONES INTEGRALES</h5>
+            <p class="card-text">Equipo de desarrolladores que brindan soluciones integrales en sistemas
+              informáticos.</p>
+            <p class="card-text"><small class="text-body-secondary">En desarrollo...</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/talentorh.jpg" class="card-img-top" alt="" width="280" height="360">
+          <div class="card-body">
+            <h5 class="card-title">SISTEMA RH</h5>
+            <p class="card-text">Sistema para el área de Recursos Humanos que concentra los procesos de 
+              organización, planificación, pagos al personal.</p>
+            <p class="card-text"><small class="text-body-secondary">En desarrollo...</small></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row acerca">
+        <br>
+        <br>
+          <h1>"En mi trayectoria profesional, he tenido la oportunidad de trabajar en distintos 
+          proyectos de programación,<br> tanto en equipos pequeños como en grandes organizaciones. 
+          He desarrollado aplicaciones, utilizando lenguajes de programación,<br> y he colaborado en la 
+          implementación de sistemas empresariales. Además, he participado en proyectos de investigación 
+          y desarrollo en el área de Logística, lo que me ha permitido ampliar mis conocimientos 
+          y habilidades en el campo de la programación."</h1>
+        <br>
+        <br>
+        
+      </div>
+
+      <div class="container">
+        <div class="CRUD">
+            <h3 class="Titulo">Registre sus datos para recibir mayor información</h3>
+            <form id="formRegistro" class="crud-form">
+                <input type="text" placeholder="Ingrese Nombres" id="nombreInput" class="form-input">
+                <input type="text" placeholder="Ingrese Apellidos" id="apellidoInput" class="form-input">    
+                <input type="text" placeholder="Ingrese Celular" id="celularInput" class="form-input">
+                <input type="text" placeholder="Ingrese Email" id="emailInput" class="form-input">
+                <button type="submit" id="submitButton" class="button buttonPrimario">Agregar</button>
+
+            </form>
+            <table class="crudTable">
+                <thead>
+                    <tr>
+                        <th class="table_header">Nombres</th>
+                        <th class="table_header">Apellidos</th>
+                        <th class="table_header">Celular</th>
+                        <th class="table_header">Email</th>
+                        <th class="table_header">Opciones</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody" class="table_body">
+
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+
+
+      <footer>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col">
+              <p>&copy; 2023 / Julio Ruiz Ordinola</p>
+            </div>
+            </div class="col">
+              </div class="col naviga">
+                <ul>
+                  <li><a href="/acerca-de">Acerca de</a></li>
+                  <li><a href="/conectar">Conectar</a></li>
+                  <li><a href="/rrss">Redes Sociales</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <script src="app.js"></script>
+       
+
+        
+      
+      </footer>
+
+
+  </body>
+
+</html>
